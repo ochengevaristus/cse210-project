@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Site Plan</title>
+  <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
+</head>
+<style>   
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #219ebc   ;
+  --secondary-color: #ffb703 ;
+  --accent1-color: #023047;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rock Salt";
+  --paragraph-font: 'Roboto', 'Helvetica', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #219ebc;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #219ebc; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #219ebc  ;
+  --nav-link-color: #219ebc;
+  --nav-background-color: #ffb703;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #219ebc;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display:block;
+  margin: auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+</style>
+<body>
+  <header>
+    <h1>Evo Book Site Plan</h1>
+    <h2>[Evaristus Ochieng]</h2>
+    <h2>WDD 130-[8]</h2>
+    <!-- In the header above, add the name of your site, your name and class number. For example if you are in section 3 you would put WDD 130-03 -->
+  </header>
+  <main>
+    <!-- ------------------------Steps 2-5------------------------------ -->
+    <hr />
+    <h2>Overview</h2>
+    <h3>Purpose</h3>
+    <p> This online library book borrowing store provides convenient and cost-effective access to a wide variety of books and reading
+        </p>
+    <!-- change this -->
+
+    <h3>  <p>
+        In today's fast-paced world, the need for convenient access to knowledge is more critical than ever. Vivo Readers bridges the gap between traditional libraries and modern technology, offering an extensive library of digital books, research materials, and literary works, all available at your fingertips. Whether you're a student, a book enthusiast, or a researcher, this online book library provides a one-stop solution for your information and reading needs.
+      </p>
+      <p>
+        With the advent of the internet, accessing books and reference materials has never been easier. Vivo Readers brings together a wide range of genres and topics, from classic literature to contemporary research papers. Whether you're seeking a Shakespearean sonnet, a scientific research paper, or a timeless classic like "Pride and Prejudice," our digital library has you covered.
+      </p>
+      <p>
+        The digital age has transformed the way we consume information. Vivo Readers not only provides access to a vast library but also offers a user-friendly reading experience. Our platform is designed for readers of all ages and backgrounds, ensuring that everyone can benefit from the wealth of knowledge within our virtual shelves.
+      </p>
+      <p>
+        Researching a topic for a school project? Need to prepare for an important exam? Vivo Readers allows you to search, browse, and access a wealth of materials, enabling you to find the information you need quickly and efficiently. Gone are the days of hunting through dusty library stacks or waiting for the next available copy of a book. Everything you need is just a few clicks away.
+      </p>
+      <p>
+        Moreover, our online book library fosters a sense of community among readers. You can interact with fellow book lovers, share your insights, and even participate in discussions about your favorite books and authors. The digital environment not only offers a solitary reading experience but also connects you with a global community of like-minded individuals who share your passion for literature and learning.
+      </p>
+      <p>
+        One of the remarkable aspects of Vivo Readers is its contribution to digital preservation. We understand the importance of preserving the world's literary heritage, and by digitizing a wide variety of books and resources, we play a significant role in ensuring that valuable knowledge is accessible to future generations. Our commitment to preserving cultural and educational heritage aligns with our mission to provide a space where learning and reading thrive.
+      </p></h3>
+    <p>[Internet Users will be able to access my site using mobile phones, desktops and laptops]</p>
+    <!-- change this -->
+
+    <hr />
+
+    <hr/>
+    <h2>Branding</h2>
+    <h3>Website Logo</h3>
+    <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+    <img src="logo.jpeg" alt="Logo image" />
+    <hr />
+    <h2>Style Guide</h2>
+
+    <!-- ------------------------Steps 6-9------------------------------ -->
+
+    <h3>Color Palette</h3>
+    <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in Canvas then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+    <!-- Copy and paste the URL to your finished palette below. Replace the href value that is there with yours. Make sure to paste it into both the href value and the content text of the <a> tag -->
+    <p>Palette URL:</p>
+    <a href="https://coolors.co/8ecae6-219ebc-023047-ffb703-ffffff"
+      target="_blank">https://coolors.co/8ecae6-219ebc-023047-ffb703-ffffff</a>
+
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary</th>
+        <th>Accent 1</th>
+        <th>Accent 2</th>
+      </tr>
+      <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+      <tr>
+        <td class="primary">[#219ebc]</td>
+        <td class="secondary">[#ffb703]</td>
+        <td class="accent1">[#023047]</td>
+        <td class="accent2"></td>
+      </tr>
+    </table>
+
+    <!-- ------------------------Steps 10-12------------------------------ -->
+
+    <h3>Typography</h3>
+    <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Think also about which of your colors above you might use for background and font colors. -->
+
+    <h4>
+      Heading Font: Rock Salt
+      <!-- change this -->
+    </h4>
+    <h4>
+      Paragraph Font: Roboto
+      <!-- change this -->
+    </h4>
+    <h3>Normal paragraph example</h3>
+    <p>
+        The digital age has transformed the way we consume information. 
+        Vivo Readers not only provides access to a vast library but also 
+        offers a user-friendly reading experience. Our platform is designed
+        for readers of all ages and backgrounds, ensuring that everyone can 
+        benefit from the wealth of knowledge within our virtual shelves.
+    </p>
+    <h3>Colored paragraph example</h3>
+    <p class="colored">
+    Researching a topic for a school project? Need to prepare for an important exam?
+    Vivo Readers allows you to search, browse, and access a wealth of materials,
+    enabling you to find the information you need quickly and efficiently.
+    Gone are the days of hunting through dusty library stacks or waiting for the
+    next available copy of a book. Everything you need is just a few clicks away.
+    </p>
+
+    <!-- ------------------------Step 13------------------------------ -->
+
+    <h3>Navigation</h3>
+    <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+    </nav>
+    <hr />
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home</div>
+      <div class="sm-page2">
+        [Services]
+        <!-- this page will have a name later -->
+      </div>
+      <div class="sm-page3">Contact Us</div>
+
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+    <hr />
+    <h2>Wireframes</h2>
+    <h2>about-us-Wireframe</h2>
+    <img src="aboutus.png" alt="about us page wireframe" />
+    <h2>home-page-Wireframe</h2>
+    <img src="home.png" alt="home page wireframe" />
+    <h2>my-page-Wireframe</h2>
+    <img src="services.png" alt="service page wireframe" />
+
+    <!-- Create an additional wireframe for your site. List it here below the Home page wireframe. -->
+
+    <h3>Home</h3>
+
+    <img src="libraryi.jpg" alt="home page wireframe" />
+
+    <h3>[Page 2]</h3>
+
+    <!-- <img src="#" alt="page 2 wireframe"> -->
+  </main>
+  <styles>
+    
+  </styles>
+</body>
+
+</html>

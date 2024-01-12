@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5em;
+            height: 100vh;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+        }
+
+        nav.collapsed {
+            width: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 20px;
+            width: 90%;
+            color: #333; 
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        });
+
+        function toggleNav() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('collapsed');
+        }
+
+        function showContent(section) {
+        }
+    </script>
+    <title>Online Library</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vivo Library</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="toggleNav()">☰</a>
+        <ul>
+            <li><a href="homew.html" onclick="showContent('Home')">Home</a></li>
+            <li><a href="books.html" onclick="showContent('Books')">Books</a></li>
+            <li><a href="genres.html" onclick="showContent('Genres')">Genres</a></li>
+            <li><a href="fiction.html" onclick="showContent('Fiction')">Fiction</a></li>
+            <li><a href="classic.html" onclick="showContent('Classics')">Classics</a></li>
+            <li><a href="mystery.html" onclick="showContent('Mystery')">Mystery</a></li>
+            <li><a href="conta.html" onclick="showContent('Contact')">Contact</a></li>
+            <li><a href="about.html" onclick="showContent('About')">About</a></li>
+            <li><a href="setting.html" onclick="showContent('Settings')">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Your content goes here -->
+    </main>
+
+    <!-- Your existing footer -->
+    <footer>
+        <p>&copy; 2023 Online Library</p>
+    </footer>
+</body>
+</html>
